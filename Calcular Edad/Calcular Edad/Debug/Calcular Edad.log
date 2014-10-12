@@ -1,0 +1,14 @@
+﻿Build started 12/10/2014 11:36:56 a.m..
+     1>Project "C:\Users\Nestor\Documents\GitHub\Calculador-de-edad\Calcular Edad\Calcular Edad\Calcular Edad.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Programas\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\Calcular Edad.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Programas\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Calcular Edad.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "Calcular Edad.cpp"
+         Calcular Edad.cpp
+     1>c:\users\nestor\documents\github\calculador-de-edad\calcular edad\calcular edad\calcular edad.cpp(21): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programas\visual studio\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>Done Building Project "C:\Users\Nestor\Documents\GitHub\Calculador-de-edad\Calcular Edad\Calcular Edad\Calcular Edad.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:08.53
