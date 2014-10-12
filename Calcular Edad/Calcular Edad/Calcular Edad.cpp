@@ -5,22 +5,25 @@
 #include <cstdlib>
 #include <iostream>
 #include <time.h>
+#ifdef _MSC_VER // check MSC version
+#define _CRT_SECURE_NO_WARNINGS // Disable all warnings
+#endif
+
 
 using namespace std;
 
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	struct tm *tiempo;
-	int dia;
-	int mes;
-	int anio;
-
-	
 	time_t fecha_sistema;
+	struct tm *tiempo;
+	
 	time(&fecha_sistema);
 	tiempo = localtime(&fecha_sistema);
 
+	int dia;
+	int mes;
+	int anio;
 	anio = tiempo->tm_year + 1900;
 	mes = tiempo->tm_mon + 1;
 	dia = tiempo->tm_mday;
@@ -30,7 +33,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	do{
 		int day, month, year;
 		cout << "Dada la fecha de nacimiento, diga la edad de la persona" << endl;
-		cout << "Fecha actual: " << asctime(tiempo);
+		//cout << "Fecha actual: " << asctime(tiempo);
 		cout << "Introduzca el Dia de Nacimiento: ";
 		cin >> day;
 		cout << "Introduzca el Mes de Nacimiento: ";
@@ -48,6 +51,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			}
 			else{
 				cout << "Edad: " << (anio - year);
+				cout << endl << endl;
 			}
 		}
 	} while (fecha_invalida);
