@@ -1,10 +1,12 @@
 // Calcular Edad.cpp : Defines the entry point for the console application.
-//
+// Editado desde la tablet. con AIDE y GIThub
 
 #include "stdafx.h"
 #include <cstdlib>
 #include <iostream>
 #include <time.h>
+
+//Debi de agregar estas lineas debido a que en visual studio no permiten utilizar localtime.
 #ifdef _MSC_VER // check MSC version
 #define _CRT_SECURE_NO_WARNINGS // Disable all warnings
 #endif
@@ -38,7 +40,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		cin >> day;
 		cout << "Introduzca el Mes de Nacimiento: ";
 		cin >> month;
-		cout << "Introduzca el Año de Nacimiento: ";
+		cout << "Introduzca el Aï¿½o de Nacimiento: ";
 		cin >> year;
 		if ((year > 2014) || (month>12) || (month<1) || (day<1) || (day>31)) {
 			cout << endl << "Fecha invalida." << endl << endl;
