@@ -1,5 +1,6 @@
 // Calcular Edad.cpp : Defines the entry point for the console application.
 // Editado desde la tablet. con AIDE y GIThub
+// Ahora tambien lo modifique desde la pag. de GitHub
 
 #include "stdafx.h"
 #include <cstdlib>
